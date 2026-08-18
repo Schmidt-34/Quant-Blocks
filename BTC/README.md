@@ -13,3 +13,5 @@ Corridor / PL engine: https://github.com/Schmidt-34/Quantitative-Macro-Intellige
 | `pipelines/` | How BTC series get in |
 | `scripts/` | Helpers |
 | `models/` | New fitted work later — never a copy of the corridor |
+
+Full map: [`CATALOG.md`](CATALOG.md). Architecture: [`STACK.md`](STACK.md). Stand-up order: [`BUILD.md`](BUILD.md).

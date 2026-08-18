@@ -4,6 +4,8 @@ On-chain and trading as one practice. ETH, alts, stables, market-wide.
 
 Not Bitcoin-as-network. Not Chaos Corridor.
 
+Current series: **BTC.D** in `onchain/btc_d.csv`. Append with `python3 scripts/get_btc_d.py`.
+
 | Layer | For |
 |---|---|
 | `onchain/` | Venue flow, stables, alt metrics |
@@ -13,3 +15,5 @@ Not Bitcoin-as-network. Not Chaos Corridor.
 | `pipelines/` | How crypto series get in |
 | `scripts/` | Helpers |
 | `models/` | Later |
+
+Full map: [`CATALOG.md`](CATALOG.md). Architecture: [`STACK.md`](STACK.md). Stand-up order: [`BUILD.md`](BUILD.md).
