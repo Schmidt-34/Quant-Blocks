@@ -1,15 +1,27 @@
 # Binance BTCUSDT perp OI
 
-Get → save, append-only. Copy this page into local OneNote.
+Copy this page into local OneNote. OI only. One script.
+
+Laptop awake. Corridor auto 10:00. OI auto **10:10**. Needs today’s QMI row (Z). Perps only. Timer is this Mac only — not in the GitHub repo.
+
+## One script
+
+`BTC/scripts/get_oi.py`
+
+**Auto** (timer, or pull when you feel like it — no typing):
 
 ```bash
+cd /Users/griff1/Quant-Blocks/BTC
 python3 scripts/get_oi.py
 ```
 
-Writes `trading/oi.csv`. Same date is not written twice.
+**Manual** (you type Z from the chart):
 
-Source: Binance USD-M `BTCUSDT` perp. No API key. `oi_usd` = open interest × mark.
+```bash
+cd /Users/griff1/Quant-Blocks/BTC
+python3 scripts/get_oi.py --z -0.84
+```
 
-Auto (no args) uses today’s QMI row for Z. Manual: `python3 scripts/get_oi.py --z -0.84`. If corridor has not written **today**, both stop.
+If corridor has not written **today**, both stop. Run corridor first. Same date is not written twice.
 
-Timer on this Mac: 10:10 (`com.quantblocks.oi.plist`). Corridor auto 10:00 in QMI.
+Writes `trading/oi.csv`. `oi_usd` = OI × mark. Change the `--z` number each time, or omit `--z` and let the script take Z from QMI.

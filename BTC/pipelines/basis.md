@@ -1,17 +1,27 @@
 # Binance BTCUSDT perp basis (mark vs index)
 
-Get → save, append-only. Copy this page into local OneNote.
+Copy this page into local OneNote. Basis only. One script.
+
+Laptop awake. Corridor auto 10:00. OI auto 10:10. Funding auto 10:15. Basis auto **10:20**. Needs today’s QMI row (Z). Perps only. Timer is this Mac only — not in the GitHub repo.
+
+## One script
+
+`BTC/scripts/get_basis.py`
+
+**Auto** (timer, or pull when you feel like it — no typing):
 
 ```bash
+cd /Users/griff1/Quant-Blocks/BTC
 python3 scripts/get_basis.py
 ```
 
-Writes `trading/basis.csv`. Same date is not written twice.
+**Manual** (you type Z from the chart):
 
-Columns: `date, mark, index, basis_usd, basis_pct, z, source`.
+```bash
+cd /Users/griff1/Quant-Blocks/BTC
+python3 scripts/get_basis.py --z -0.84
+```
 
-Positive `basis_pct` = perp rich vs index. Negative = perp cheap vs index.
+If corridor has not written **today**, both stop. Run corridor first. Same date is not written twice.
 
-Auto (no args) uses today’s QMI row for Z. Manual: `python3 scripts/get_basis.py --z -0.84`. If corridor has not written **today**, both stop.
-
-Timer on this Mac: 10:20 (`com.quantblocks.basis.plist`).
+Writes `trading/basis.csv`. Positive `basis_pct` = perp rich vs index. Change the `--z` number each time, or omit `--z`.

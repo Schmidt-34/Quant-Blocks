@@ -46,18 +46,7 @@ cd BTC && python3 scripts/get_basis.py
 
 Manual Z (chart): `python3 scripts/get_oi.py --z -0.84` (same flag on funding and basis).
 
----
-
-## Daily clock (this Mac)
-
-| Time | Repo | Job |
-|---|---|---|
-| 10:00 | QMI | Chaos Corridor |
-| 10:10 | Quant-Blocks | OI |
-| 10:15 | Quant-Blocks | funding |
-| 10:20 | Quant-Blocks | basis |
-
-LaunchAgents: [`BTC/scripts/com.quantblocks.*.plist`](BTC/scripts/). Corridor plist lives in the QMI repo.
+Schedule is optional and local. This repo does not ship timers.
 
 ---
 
