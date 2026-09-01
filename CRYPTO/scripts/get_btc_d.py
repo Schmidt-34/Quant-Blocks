@@ -3,9 +3,18 @@
 
 import csv
 import json
+import ssl
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+
+
+def https_context() -> ssl.SSLContext:
+    paths = ssl.get_default_verify_paths()
+    for candidate in (paths.cafile, paths.openssl_cafile, "/etc/ssl/cert.pem"):
+        if candidate and Path(candidate).exists():
+            return ssl.create_default_context(cafile=candidate)
+    return ssl.create_default_context()
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "onchain" / "btc_d.csv"
@@ -16,7 +25,7 @@ FIELDS = ["date", "value", "unit", "source"]
 
 def main() -> None:
     req = urllib.request.Request(URL, headers={"User-Agent": "Quant-Blocks-CRYPTO/0.1"})
-    with urllib.request.urlopen(req, timeout=20) as resp:
+    with urllib.request.urlopen(req, timeout=20, context=https_context()) as resp:
         data = json.load(resp)["data"]
 
     day = datetime.fromtimestamp(data["updated_at"], tz=timezone.utc).date().isoformat()

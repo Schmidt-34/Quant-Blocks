@@ -28,9 +28,9 @@ Spot and perps are **different books**. The alpha is the gap: who is selling on 
 
 ### Free — Binance public (no API key)
 
-- [ ] 1. `trading/oi.csv` — Binance perp OI
-- [ ] 2. `trading/funding.csv` — Binance funding
-- [ ] 3. `trading/basis.csv` — Binance perp vs index
+- [x] 1. `trading/oi.csv` — Binance perp OI  Z=-0.83 (2026-08-31)
+- [x] 2. `trading/funding.csv` — Binance funding  Z=-0.83 (2026-08-31)
+- [x] 3. `trading/basis.csv` — Binance perp vs index  Z=-0.84 (2026-09-01)
 - [ ] 4. `trading/cvd_perp.csv` — Binance **futures** taker buy/sell (cumulate)
 - [ ] 5. `trading/cvd_spot.csv` — Binance **spot** taker buy/sell (cumulate)
 - [ ] 6. `trading/cvd_gap.csv` — perp CVD minus spot CVD (you compute from 4 and 5)
