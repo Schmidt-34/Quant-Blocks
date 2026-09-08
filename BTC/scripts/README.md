@@ -7,5 +7,7 @@ Helpers. One small getter per series. Tool ≠ model.
 | `get_oi.py` | Binance BTCUSDT perp OI |
 | `get_funding.py` | Binance BTCUSDT perp funding |
 | `get_basis.py` | Binance BTCUSDT perp basis |
+| `get_cvd_perp.py` | Binance BTCUSDT perp CVD |
+| `get_cvd_spot.py` | Binance BTCUSDT spot CVD |
 
 Stdlib only. No API key. Join today’s QMI row unless `--z` is passed.

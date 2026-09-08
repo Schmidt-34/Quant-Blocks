@@ -4,7 +4,7 @@ Bitcoin lab. Not Chaos Corridor.
 
 Corridor / PL engine: https://github.com/Schmidt-34/Quantitative-Macro-Intelligence
 
-Current tape: Binance BTCUSDT perp **OI**, **funding**, **basis**. Append with the getters in `scripts/`. Next BUILD line is perp CVD.
+Current tape: Binance BTCUSDT perp **OI**, **funding**, **basis**, **CVD**, plus **spot CVD**. Next BUILD line is cvd_gap.
 
 | Layer | For |
 |---|---|

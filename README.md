@@ -22,29 +22,39 @@ Each block has the same work layers: data/onchain, trading, research, articles, 
 
 ## Live getters
 
-Four append-only public-API getters. Tool ≠ model. Fitted work stays in `models/` until a series has enough rows.
+Append-only public-API getters. Tool ≠ model. Fitted work stays in `models/` until a series has enough rows.
 
 | Series | Block | Script | Writes |
 |---|---|---|---|
 | BTC.D | CRYPTO | [`CRYPTO/scripts/get_btc_d.py`](CRYPTO/scripts/get_btc_d.py) | `CRYPTO/onchain/btc_d.csv` |
+| ETH.D | CRYPTO | [`CRYPTO/scripts/get_eth_d.py`](CRYPTO/scripts/get_eth_d.py) | `CRYPTO/onchain/eth_d.csv` |
+| Total crypto mcap | CRYPTO | [`CRYPTO/scripts/get_total_mcap.py`](CRYPTO/scripts/get_total_mcap.py) | `CRYPTO/onchain/total_mcap.csv` |
 | Binance BTCUSDT perp OI | BTC | [`BTC/scripts/get_oi.py`](BTC/scripts/get_oi.py) | `BTC/trading/oi.csv` |
 | Binance BTCUSDT perp funding | BTC | [`BTC/scripts/get_funding.py`](BTC/scripts/get_funding.py) | `BTC/trading/funding.csv` |
 | Binance BTCUSDT perp basis | BTC | [`BTC/scripts/get_basis.py`](BTC/scripts/get_basis.py) | `BTC/trading/basis.csv` |
+| Binance BTCUSDT perp CVD | BTC | [`BTC/scripts/get_cvd_perp.py`](BTC/scripts/get_cvd_perp.py) | `BTC/trading/cvd_perp.csv` |
+| Binance BTCUSDT spot CVD | BTC | [`BTC/scripts/get_cvd_spot.py`](BTC/scripts/get_cvd_spot.py) | `BTC/trading/cvd_spot.csv` |
+| Binance ETHUSDT perp OI | CRYPTO | [`CRYPTO/scripts/get_eth_oi.py`](CRYPTO/scripts/get_eth_oi.py) | `CRYPTO/trading/eth_oi.csv` |
 
 CSVs are gitignored — regenerate locally. Same date is not written twice.
 
-OI, funding, and basis join today’s QMI corridor row for Z. Run Chaos Corridor first (or pass `--z` from the chart). Point `QMI_METRICS` at the corridor CSV if it is not at `~/Quantitative-Macro-Intelligence/04-Quant-Models/chaos-corridor/data/chaos_corridor_metrics.csv`.
+OI, funding, basis, and both CVD series join today’s QMI corridor row for Z. ETH OI does too. Run Chaos Corridor first (or pass `--z` from the chart). Point `QMI_METRICS` at the corridor CSV if it is not at `~/Quantitative-Macro-Intelligence/04-Quant-Models/chaos-corridor/data/chaos_corridor_metrics.csv`.
 
 ### Quick start
 
 ```bash
 cd CRYPTO && python3 scripts/get_btc_d.py
+cd CRYPTO && python3 scripts/get_eth_d.py
+cd CRYPTO && python3 scripts/get_total_mcap.py
 cd BTC && python3 scripts/get_oi.py
 cd BTC && python3 scripts/get_funding.py
 cd BTC && python3 scripts/get_basis.py
+cd BTC && python3 scripts/get_cvd_perp.py
+cd BTC && python3 scripts/get_cvd_spot.py
+cd CRYPTO && python3 scripts/get_eth_oi.py
 ```
 
-Manual Z (chart): `python3 scripts/get_oi.py --z -0.84` (same flag on funding and basis).
+Manual Z (chart): `python3 scripts/get_oi.py --z -0.84` (same flag on funding, basis, both CVD getters, and ETH OI).
 
 Schedule is optional and local. This repo does not ship timers.
 

@@ -32,8 +32,8 @@ ETH tape is **not** BTC tape. Do not copy `BTC/trading/oi.csv` into this block.
 Same endpoint as BTC.D. One new file per slot.
 
 - [x] 1. `onchain/btc_d.csv` — Bitcoin share of crypto mcap
-- [ ] 2. `onchain/eth_d.csv` — ETH share (`market_cap_percentage.eth`)
-- [ ] 3. `onchain/total_mcap.csv` — total crypto mcap USD
+- [x] 2. `onchain/eth_d.csv` — ETH share (`market_cap_percentage.eth`)  11.11% (2026-09-02)
+- [x] 3. `onchain/total_mcap.csv` — total crypto mcap USD  $2.60T (2026-09-02)
 
 
 
@@ -41,7 +41,7 @@ Same endpoint as BTC.D. One new file per slot.
 
 ETHUSDT. Spot and perps are **different books**.
 
-- [ ] 4. `trading/eth_oi.csv` — Binance ETH perp OI
+- [x] 4. `trading/eth_oi.csv` — Binance ETH perp OI  Z=-0.84 (2026-09-08)
 - [ ] 5. `trading/eth_funding.csv` — Binance ETH funding
 - [ ] 6. `trading/eth_basis.csv` — ETH perp vs index
 - [ ] 7. `trading/eth_cvd_perp.csv` — ETH futures taker buy/sell (cumulate)

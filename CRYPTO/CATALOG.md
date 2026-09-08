@@ -37,9 +37,9 @@ SSR (stables vs **BTC**) can live in BTC. USDT/USDC **as objects** live here.
 | Series | Primary | Folder | Notes |
 |---|---|---|---|
 | BTC.D | CoinGecko global | `onchain/btc_d.csv` | Standing. Bitcoin share of crypto. |
-| ETH.D | CoinGecko global | `onchain/eth_d.csv` | Same pull as BTC.D. |
+| ETH.D | CoinGecko global | `onchain/eth_d.csv` | Standing. Same pull as BTC.D. |
 | Others.D | You compute | `onchain/others_d.csv` | 100 − BTC.D − ETH.D. After both exist. |
-| Total crypto mcap USD | CoinGecko global | `onchain/total_mcap.csv` | |
+| Total crypto mcap USD | CoinGecko global | `onchain/total_mcap.csv` | Standing. |
 | TOTAL2 (ex BTC) | You compute | `onchain/total2.csv` | After total mcap + BTC.D. |
 | TOTAL3 (ex BTC+ETH) | You compute | `onchain/total3.csv` | After ETH.D. Later. |
 | Altcoin season index | CoinGlass | `trading/alt_season.csv` | Watch until paid. |

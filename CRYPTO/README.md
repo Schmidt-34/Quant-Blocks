@@ -4,7 +4,7 @@ On-chain and trading as one practice. ETH, alts, stables, market-wide.
 
 Not Bitcoin-as-network. Not Chaos Corridor.
 
-Current series: **BTC.D** in `onchain/btc_d.csv`. Append with `python3 scripts/get_btc_d.py`.
+Current series: **BTC.D**, **ETH.D**, **total mcap**, **ETH OI**.
 
 | Layer | For |
 |---|---|
