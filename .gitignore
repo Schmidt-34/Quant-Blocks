@@ -6,3 +6,4 @@ __pycache__/
 FRAMEWORK.md
 logs/
 *.plist
+**/research/20*.md

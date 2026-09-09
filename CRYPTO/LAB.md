@@ -6,7 +6,7 @@ Every CRYPTO slot:
 
 1. Next unchecked BUILD line
 2. Append the standing series (`onchain/btc_d.csv` until you leave that list)
-3. One sentence in `research/`
+3. One sentence in the Word CRYPTO LOG
 4. Stop
 
 Tue 14:30–19:00: new file or first pull.  

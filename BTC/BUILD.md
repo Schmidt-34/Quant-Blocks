@@ -13,7 +13,7 @@ Do **not** rebuild CheckOnChain, Glassnode, OnChainMind, or CoinGlass. Take **on
 1. Open this list.
 2. Do the next unchecked **BUILD** line.
 3. Write today’s Z next to the number (from the PL log).
-4. One sentence in `research/`.
+4. One sentence in the Word **BTC LOG** (Desktop). Not this repo.
 5. Stop.
 
 If the pull fails: pipeline only. No sentence required.
@@ -62,7 +62,7 @@ Heatmaps, DOM, VRVP, VPOC (OpenMarket / MMT): **watch**. Do not rebuild. Store a
 
 ### Join and later
 
-- [ ] Every BTC slot after OI exists: dated sentence in `research/` — series vs Z
+- [ ] Every BTC slot after OI exists: dated sentence in the Word BTC LOG — series vs Z
 - [ ] `articles/` — one saved claim, marked tested / not
 - [ ] `models/` — OI vs Z overlay **only after 12 OI rows**. Never a second corridor.
 

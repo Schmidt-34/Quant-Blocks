@@ -1,5 +1,5 @@
 # BTC / research
 
-Dated one-sentence notes when a series is stood up or a day matters. Same job as `CRYPTO/research/`.
+Observations stay in the Word **BTC LOG** on the Desktop. That file is not in this repo.
 
-Daily habit: Word **BTC LOG** on the Desktop. That file is not in this repo.
+GitHub holds getters and keys, not the daily read.

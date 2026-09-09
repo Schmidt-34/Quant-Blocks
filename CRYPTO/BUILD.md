@@ -13,7 +13,7 @@ Do **not** rebuild CoinGlass, Glassnode, DefiLlama, or Velo. Take **one series**
 1. Open this list.
 2. Do the next unchecked **BUILD** line.
 3. Append today’s BTC.D (`python3 scripts/get_btc_d.py`) until you leave that list.
-4. One sentence in `research/`.
+4. One sentence in the Word **CRYPTO LOG** (Desktop). Not this repo.
 5. Stop.
 
 If the pull fails: pipeline only. No sentence required.  
@@ -80,7 +80,7 @@ Same series as 4–6, per exchange, then aggregated.
 
 ### Join and later
 
-- [ ] Every CRYPTO slot after BTC.D exists: dated sentence in `research/`
+- [ ] Every CRYPTO slot after BTC.D exists: dated sentence in the Word CRYPTO LOG
 - [ ] `articles/` — one Townhall or feed claim, marked tested / not
 - [ ] `models/` — BTC.D vs Z or ETH funding extreme **only after 12 rows** of that series. Never a corridor for ETH.
 
