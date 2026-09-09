@@ -4,7 +4,7 @@ On-chain and trading as one practice. ETH, alts, stables, market-wide.
 
 Not Bitcoin-as-network. Not Chaos Corridor.
 
-Current series: **BTC.D**, **ETH.D**, **total mcap**, **ETH OI**.
+Current series: **BTC.D**, **ETH.D**, **total mcap**, **ETH OI**, **ETH funding**.
 
 | Layer | For |
 |---|---|

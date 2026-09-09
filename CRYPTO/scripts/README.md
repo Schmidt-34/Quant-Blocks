@@ -8,3 +8,4 @@ Helpers. One small getter per series. Tool ≠ model.
 | `get_eth_d.py` | CoinGecko ETH.D (`market_cap_percentage.eth`) |
 | `get_total_mcap.py` | CoinGecko total crypto mcap USD |
 | `get_eth_oi.py` | Binance ETHUSDT perp OI |
+| `get_eth_funding.py` | Binance ETHUSDT perp funding |

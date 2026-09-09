@@ -42,7 +42,7 @@ Same endpoint as BTC.D. One new file per slot.
 ETHUSDT. Spot and perps are **different books**.
 
 - [x] 4. `trading/eth_oi.csv` — Binance ETH perp OI  Z=-0.84 (2026-09-08)
-- [ ] 5. `trading/eth_funding.csv` — Binance ETH funding
+- [x] 5. `trading/eth_funding.csv` — Binance ETH funding  Z=-0.81 (2026-09-09)
 - [ ] 6. `trading/eth_basis.csv` — ETH perp vs index
 - [ ] 7. `trading/eth_cvd_perp.csv` — ETH futures taker buy/sell (cumulate)
 - [ ] 8. `trading/eth_cvd_spot.csv` — ETH spot taker buy/sell (cumulate)
@@ -93,7 +93,7 @@ Same series as 4–6, per exchange, then aggregated.
 - [ ] BTC.D = Bitcoin’s share of crypto. The rest is this block.
 - [ ] ETH.D vs BTC.D = rotation, not a new physics.
 - [ ] Stables supply = dry powder. Not a price.
-- [ ] ETH funding = who is paying to stay crowded in ETH.
+- [x] ETH funding = who is paying to stay crowded in ETH.
 - [ ] ETH OI = leverage left open in ETH. Not BTC OI.
 - [ ] Spot vs perp CVD on ETH = who is selling spot vs who is selling futures.
 - [ ] Optional Z join: cheap BTC + rising BTC.D = alts dying into a BTC bid. Cheap BTC + falling BTC.D = risk-on alts while the corridor says cheap.

@@ -70,7 +70,7 @@ Spot and perps are different books. The alpha is the gap.
 | ETH spot close / volume | Binance / CoinGecko | `trading/eth_spot.csv` |
 | ETH perp OI (USD + coin) | Binance, then Velo | `trading/eth_oi.csv` |
 | ETH OI by venue | Velo / CoinGlass | `trading/eth_oi_by_venue.csv` |
-| ETH funding | Binance, then Velo | `trading/eth_funding.csv` |
+| ETH funding | Binance, then Velo | `trading/eth_funding.csv` | Standing. |
 | ETH funding by venue | Velo | `trading/eth_funding_by_venue.csv` |
 | ETH perp vs index (basis) | Binance / Velo | `trading/eth_basis.csv` |
 | ETH premium (perp minus spot) | Velo | `trading/eth_premium.csv` |
